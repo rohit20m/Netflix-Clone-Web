@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url('/images/bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: (1200px, 100vw);
+    height: 70vh;
+    position: relative;
+}
+
+.main .box {
+    width: 100%;
+    height: 70vh;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    font-weight: 900;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    color: white;
+}
+
+nav {
+    width: 60vw;
+    height: 62px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 62px);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: rgba(248, 243, 243, 0.021);
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+
+@media screen and (max-width: 1300px) {
+    .first {
+        flex-wrap: wrap;
+    }
+}
+
+.secImage {
+    position: relative;
+}
+
+.secImage img {
+    width: 40vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secImage video {
+    position: absolute;
+    top: 86px;
+    right: 77px;
+    width: 29vw;
+}
+
+section .first>div {
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faqBox {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+.faqBox svg {
+    filter: invert(1);
+}
+
+.faqBox:hover {
+    background-color: #414141;
+    color: white;
+    transition: 0.5s;
+}
+
+.content {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    display: none;
+    max-width: 60vw;
+    margin: -33px auto 34px auto;
+}
+
+.cancel {
+    display: none;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+@media screen and (max-width:1300px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-tem {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.popUp .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popUp .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 330px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popUp .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popUp.active .overlay {
+    display: block;
+}
+
+.popUp.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
